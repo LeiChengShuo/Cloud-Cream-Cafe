@@ -1,0 +1,397 @@
+/*style.css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+}
+    
+
+/*--Navbar --*/
+.navbar {
+    height: 38px;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#ffffff;
+}
+.navbar a {
+    text-decoration: none;
+    color: #111;
+    font-size: 11px;
+}
+.nav-links {
+    display: flex;
+    gap: 45px;
+}
+
+/*hero section*/
+.hero {
+    height: 335px;
+    background-image: 
+    linear-gradient(
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.35)),
+    url(./images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 40px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.hero p {
+    font-size: 13px;
+    margin-bottom: 80px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 70px;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 30px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.hero-buttons a:hover {
+    background-color: #d8c6a6;
+    transform: translateY(-3px);
+}
+
+/* feature section */
+.feature {
+    padding: 27px 4.5% 50px;
+}
+
+.section-title {
+   font-size: 40px;
+   margin: 0 0 15px 25px;
+}
+
+.feature-list {
+    display: flex;
+    gap: 36px;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.feature-list::-webkit-scrollbar {
+    display: none;
+}
+
+.feature-card {
+    flex: 0 0 296px;
+    height: 462px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.feature-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Moment */
+
+.moments {
+    padding: 0 4.2% 95px;
+}
+
+.moments .section-title {
+    margin-left : 32px;
+    margin-bottom: 45px;
+}
+
+.moment-list {
+    display: flex;
+    gap: 38px;
+    overflow-x: auto;
+    padding: 0 0 12px;
+    scrollbar-width: none;
+}
+
+.moment-list::-webkit-scrollbar {
+    display: none;
+}
+
+.moment-card {
+    flex: 0 0 296px;
+    height : 462px;
+    padding: 32px 21px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 
+         0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.moment-card h3 {
+    font-size: 20px;
+    margin-bottom: 43px;
+}
+
+.moment-card p {
+    font-size: 15px;
+    line-height: 1.25px;
+    margin-bottom: 30px;
+}
+
+.moment-card img {
+    display: block;
+    width: 90%;
+    height: 246px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    min-height: 93px;
+    padding: 20px 3%;
+    box-sizing: border-box;
+    background-color:black;
+    color:#ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    line-height: 1.8;
+    flex-shrink: 0;
+}
+
+/*common subpage style */
+
+.page-title {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 65px;
+}
+
+/*product*/
+.product-page {
+    padding: 35px 6% 40px;
+    overflow: hidden;
+}
+
+.product-page .page-title {
+    margin-bottom: 65px;
+}
+
+
+.product-category {
+    margin-bottom: 35px;
+}
+
+.product-category h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    
+}
+
+.product-list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.product-list::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+    flex: 0 0 400px;
+    height: 286px;
+    position: relative;
+    background-color: #d9d9d9;
+    border-radius: 27px;
+    overflow: hidden;
+    
+    
+    
+}
+
+.product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.product-card:hover img {
+    transform: scale (1.05);
+}
+
+.product-info {
+    position: absolute;
+    top: 20px;
+    left: 28px;
+    right: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 2;
+}
+
+.product-info h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.product-info p {
+    font-size: 13px;
+    margin-top: 12px;
+    color: white;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* about */
+.about-page {
+    padding: 35px 6% 80px;  
+}
+
+.about-page .page-title {
+    margin-bottom: 20px;
+}
+
+.about-image {
+    width: 88%;
+    height: 345px;
+    margin: 0 auto;
+    border-radius: 48px;
+    overflow: hidden;
+}
+
+.about-image video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.about-description {
+    width: 84%;
+    margin: 60px auto 0;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+/*contact*/
+
+.contact-page {
+    padding: 35px 6% 60px;
+}
+
+.contact-page .page-title {
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    width: 84%;
+    margin: 0 auto 20px;
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+.contact-map {
+    width: 88%;
+    height: 345px;
+    margin: 0 auto;
+    border-radius: 48px;
+    overflow: hidden;
+    background-color: #d9d9d9;
+}
+
+.contact-map img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* res*/
+
+.reservation-page {
+    padding: 35px 6% 80px;
+}
+
+.reservation-form {
+    width: 60%;
+    max-width: 470px;
+    margin: 95px auto 0;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 38px;
+    background-color: #d9d9d9;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+
+.form-group input:focus {
+    outline: 2px solid #d9d9d9
+}
+
+.submit-button {
+    display: block;
+    width: 125px;
+    height: 40px;
+    margin: 50px auto 0;
+    border: none;
+    border-radius: 30px;
+    background-color: #d9d9d9;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #bdbdbd;
+}
